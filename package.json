@@ -1,0 +1,24 @@
+{
+  "name": "misbaha",
+  "version": "1.0.0",
+  "description": "تطبيق بسيط لتلاوة سورة يس بأسلوب المسبحة، مصمم للتركيز والروحانية.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/5ache3/misbaha.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/5ache3/misbaha/issues"
+  },
+  "homepage": "https://github.com/5ache3/misbaha#readme",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
