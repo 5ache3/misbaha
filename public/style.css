@@ -583,8 +583,8 @@ body::before {
   }
 
   .arabic-text {
-    font-size: 1.55rem;
-    line-height: 2.1;
+    font-size: 1.3rem;
+    line-height: 2;
   }
 
   .recite-bottombar {
