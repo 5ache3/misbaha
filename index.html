@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>مسبحة | سورة يس</title>
+  <meta name="description" content="تلاوة سورة يس مع تتبع وقت كل صفحة" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+  <div id="app">
+
+    <!-- ════════════════════════════════
+       INTRO SCREEN
+  ════════════════════════════════ -->
+    <section id="intro-screen" class="screen">
+      <div class="card">
+        <div class="ornament">۞ ﷽ ۞</div>
+
+        <h1 class="intro-surah-name">يس</h1>
+        <p class="intro-surah-label">Surah Yasin · Surah 36 · 83 Ayat</p>
+
+        <div class="intro-dedication">
+          القرائة على روح المغفور لها بإذن الله<br>
+          <span class="dedication-name"> توت جمال ول عبدوا </span>
+        </div>
+
+        <div class="intro-divider"></div>
+
+        <p class="intro-bismillah">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</p>
+
+
+
+        <button id="start-btn" class="btn-start" aria-label="ابدأ التلاوة">
+          <span class="btn-icon">📖</span>
+          ابدأ التلاوة
+        </button>
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════
+       RECITATION SCREEN
+  ════════════════════════════════ -->
+    <section id="recite-screen" class="screen">
+      <div class="card">
+
+        <!-- Top bar -->
+        <div class="recite-topbar">
+          <span class="topbar-title">سورة يس</span>
+          <div class="page-indicator">
+            <span class="page-badge" id="page-badge">1 / 8</span>
+          </div>
+        </div>
+
+        <div class="gold-line"></div>
+
+        <!-- Progress dots -->
+        <div class="progress-dots" id="progress-dots" role="progressbar" aria-label="تقدم القراءة"></div>
+
+        <!-- Quran text -->
+        <div class="quran-page">
+          <p class="page-label" id="page-label"></p>
+          <div class="arabic-text" id="arabic-text"></div>
+        </div>
+
+        <div class="gold-line"></div>
+
+        <!-- Bottom bar -->
+        <div class="recite-bottombar">
+          <button class="btn-restart" id="prev-btn" style="visibility: hidden;">
+            ← الصفحة السابقة
+          </button>
+          <button class="btn-next" id="action-btn" aria-label="الصفحة التالية">
+            الصفحة التالية ←
+          </button>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════
+       RESULT SCREEN
+  ════════════════════════════════ -->
+    <section id="result-screen" class="screen">
+      <div class="card">
+
+        <div class="result-icon" id="result-status-icon">✓</div>
+        <h2 class="result-title">اكتملت ختمة سورة يس</h2>
+        <p class="result-arabic">﴿ فَسُبْحَانَ الَّذِي بِيَدِهِ مَلَكُوتُ كُلِّ شَيْءٍ وَإِلَيْهِ تُرْجَعُونَ ﴾</p>
+        <p class="result-msg" id="result-status-text">تقبل الله منك صالح الأعمال</p>
+
+        <div class="result-stats" style="display: none;"></div>
+
+        <button class="btn-restart" id="restart-btn">↺ ختمة جديدة</button>
+
+      </div>
+    </section>
+
+  </div><!-- /app -->
+
+
+
+  <script src="js/app.js"></script>
+</body>
+
+</html>
